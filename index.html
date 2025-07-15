@@ -2,71 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Life | Photo Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Life - Yumeng Wu</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
     body {
-      background: #f9f9f9;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
       color: #333;
-      padding: 40px 20px;
     }
-    h1 {
+
+    header {
       text-align: center;
-      margin-bottom: 30px;
-      font-size: 3em;
-      color: #111;
+      padding: 50px 20px 20px;
     }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      padding: 30px;
       max-width: 1200px;
       margin: 0 auto;
     }
+
     .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+      background: #fff;
+      border-radius: 15px;
       overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
     }
+
     .card:hover {
       transform: scale(1.03);
-      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
     }
+
     .card img {
       width: 100%;
+      height: auto;
       display: block;
     }
-    .footer {
+
+    .caption {
+      padding: 12px;
+      font-size: 0.95em;
+      color: #555;
       text-align: center;
-      margin-top: 60px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
       font-size: 0.9em;
-      color: #777;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <h1>My Life</h1>
+
+  <header>
+    <h1>My Life</h1>
+    <p>A glimpse through my lens</p>
+  </header>
+
   <div class="gallery">
-    <div class="card"><img src="assets/images/1.jpg" alt="Photo 1" /></div>
-    <div class="card"><img src="assets/images/2.jpg" alt="Photo 2" /></div>
-    <div class="card"><img src="assets/images/3.jpg" alt="Photo 3" /></div>
-    <div class="card"><img src="assets/images/4.jpg" alt="Photo 4" /></div>
-    <div class="card"><img src="assets/images/5.jpg" alt="Photo 5" /></div>
-    <div class="card"><img src="assets/images/6.jpg" alt="Photo 6" /></div>
-    <div class="card"><img src="assets/images/7.jpg" alt="Photo 7" /></div>
-    <div class="card"><img src="assets/images/8.jpg" alt="Photo 8" /></div>
-    <div class="card"><img src="assets/images/9.jpg" alt="Photo 9" /></div>
+    <div class="card">
+      <img src="assets/images/photo1.jpg" alt="Photo 1">
+      <div class="caption">Ocean View</div>
+    </div>
+    <div class="card">
+      <img src="assets/images/photo2.jpg" alt="Photo 2">
+      <div class="caption">Rooftop Garden</div>
+    </div>
+    <div class="card">
+      <img src="assets/images/photo3.jpg" alt="Photo 3">
+      <div class="caption">Lotus Bloom</div>
+    </div>
+    <div class="card">
+      <img src="assets/images/photo4.jpg" alt="Photo 4">
+      <div class="caption">Evening Shadows</div>
+    </div>
+    <div class="card">
+      <img src="assets/images/photo5.jpg" alt="Photo 5">
+      <div class="caption">Blue Skies</div>
+    </div>
+    <div class="card">
+      <img src="assets/images/photo6.jpg" alt="Photo 6">
+      <div class="caption">Flying High</div>
+    </div>
+    <div class="card">
+      <img src="assets/images/photo7.jpg" alt="Photo 7">
+      <div class="caption">Green Arch</div>
+    </div>
   </div>
-  <div class="footer">
-    &copy; 2025 Yumeng Wu. All rights reserved.
-  </div>
+
+  <footer>
+    © 2025 Yumeng Wu. All rights reserved.
+  </footer>
+
 </body>
 </html>
