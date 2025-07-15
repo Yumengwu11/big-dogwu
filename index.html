@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Coming Soon - big-dogwu.top</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: sans-serif; text-align: center; padding-top: 15%; background: #f8f9fa; }
-    h1 { font-size: 2em; color: #333; }
-    p { color: #666; }
-  </style>
+    <meta charset="UTF-8">
+    <title>My Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+        h1 { text-align: center; padding: 1rem; }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 10px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-  <h1>big-dogwu.top</h1>
-  <p>This site is under construction. Stay tuned!</p>
+    <h1>My Life</h1>
+    <div class="gallery">
+        <img src="assets/images/photo1.jpg" alt="Photo 1">
+        <img src="assets/images/photo2.jpg" alt="Photo 2">
+        <img src="assets/images/photo3.jpg" alt="Photo 3">
+        <img src="assets/images/photo4.jpg" alt="Photo 4">
+        <img src="assets/images/photo5.jpg" alt="Photo 5">
+        <img src="assets/images/photo6.jpg" alt="Photo 6">
+        <img src="assets/images/photo7.jpg" alt="Photo 7">
+        <img src="assets/images/photo8.jpg" alt="Photo 8">
+        <img src="assets/images/photo9.jpg" alt="Photo 9">
+    </div>
 </body>
 </html>
